@@ -15,8 +15,8 @@
 
 # -----------------------------------------------------------------
 # Lineage OTA update package
-
-LINEAGE_TARGET_PACKAGE := $(PRODUCT_OUT)/lineage-$(LINEAGE_VERSION).zip
+REMIX_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_BUILD_DATE)-$(LINEAGE_BUILDTYPE)$(LINEAGE_EXTRAVERSION)-REMIX-$(LINEAGE_BUILD)
+LINEAGE_TARGET_PACKAGE := $(PRODUCT_OUT)/lineage-$(REMIX_VERSION).zip
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
